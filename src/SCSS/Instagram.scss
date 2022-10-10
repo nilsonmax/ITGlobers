@@ -8,7 +8,12 @@
   text-transform: uppercase;
   font-family: $bolder-urban;
   letter-spacing: 2px;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+}
+
+.containerInst {
+  align-items: center;
+  text-align: center;
 }
 
 .txtInstagram {
@@ -19,3 +24,49 @@
   text-transform: uppercase;
   font-family: $bolder-roboto;
 }
+
+.block{
+  position: relative;
+  display: block;
+  align-items: center;
+  text-align: center;
+ 
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 200px;
+  grid-template-areas:
+    ". a a ."
+    ". a a .";
+}
+.item1 {
+  margin-top: 20px;
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+}
+
+.containerInstagram {
+  display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
+  // // gap: 20px;
+  // padding: 15px;
+
+  img {
+    width: 100%;
+    // height: auto;
+    display: block;
+    transition: all 100ms ease-out;
+  }
+
+  img:hover {
+    transform: scale(1.04);
+  }
+}
+// }
+
+
