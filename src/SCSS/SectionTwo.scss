@@ -1,0 +1,41 @@
+@import "./variables/colors";
+@import "./variables/mixins";
+@import "./variables/fonts";
+
+
+
+.container-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color:rgb(240,240,240) ;
+
+  img {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    // height: 100vh;
+    // object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container-two {
+
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   // background-color:rgb(240,240,240) ;
+   // display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: 100px;
+
+   img {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     // height: 100vh;
+     // object-fit: cover;
+   }
+ }
+}

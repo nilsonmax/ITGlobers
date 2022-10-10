@@ -1,0 +1,21 @@
+@import "./variables/colors";
+@import "./variables/mixins";
+@import "./variables/fonts";
+
+.titleInstagram {
+  position: relative;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: $bolder-urban;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+.txtInstagram {
+  margin-top: 60px;
+  line-height: 2;
+  font-size: 1rem;
+  color: $big-Instagram;
+  text-transform: uppercase;
+  font-family: $bolder-roboto;
+}

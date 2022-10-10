@@ -1,0 +1,62 @@
+@import "./variables/fonts";
+@import "./variables/colors";
+@import "./variables//mixins";
+
+.modal {
+  color: $white;
+  text-align: center;
+  padding: 0 0 3rem 4rem;
+  position: relative;
+}
+
+.email-box {
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  margin-left: -20rem;
+  width: 40rem;
+
+  &__input {
+    color: lighten($black, 20%);
+    display: block;
+    width: 100%;
+    height: 3rem;
+    // border-radius: $border-radius;
+    border: 1px solid rgb(77, 73, 73);
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  &__button {
+    appearance: none;
+    border: none;
+    background: transparent;
+    font-size: 1.1rem;
+    position: absolute;
+    // color: $brand-color;
+    right: 1rem;
+    top: 0.7rem;
+    padding: 0;
+
+    &:hover,
+    &:focus {
+      color: darken($brand-color, 20%);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .modal {
+    width: 30rem;
+    &__icon {
+      margin-left: -105px;
+      padding: 3rem 6rem 0 6rem;
+      border-radius: 50%;
+    }
+  }
+
+  .email-box {
+    margin-left: -12.5rem;
+    width: 25rem;
+  }
+}

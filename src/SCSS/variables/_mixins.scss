@@ -1,0 +1,11 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin trans-color {
+    text-transform: uppercase;
+    color: $main-color;
+}
+
+$border-radius: 4px;
