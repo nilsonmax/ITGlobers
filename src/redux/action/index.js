@@ -1,27 +1,17 @@
 import axios from 'axios';
 
-export const GET_FORMULARIOS = "GET_FORMULARIOS";
+export const GET_API = "GET_API";
 
-export const getVideoGame = () => {
+export const fetchInstagramPost = (limit, current) => {
     return async (dispatch) => {
         try {
-
-            const resp = await axios.get(`http://localhost:3001/formularios`)
+            const resp = await axios.get(`https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=${limit}&access_token=${current}`)
             return dispatch({
-                type: GET_FORMULARIOS,
-                payload: resp.data
+                type: GET_API,
+                payload: resp.data.data
             })
-
-        } catch (error) {
-            console.log(error)
+        } catch (err) {
+            console.log('error', err)
         }
-
     }
 }
-
-// export const getDataClear = (payload) => {
-//     return {
-//         type: DATA_CLEAR,
-//         payload
-//     }
-// }

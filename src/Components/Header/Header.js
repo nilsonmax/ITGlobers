@@ -24,24 +24,24 @@ export const Header = () => {
                                 <li>
                                     <div className='menuIco separador'>
                                         <div><img src={puff} alt="puff" /></div>
-                                        <div><a href='#shop'>Pufi puff</a></div>
+                                        <div><a href='#pufipuff'>Pufi puff</a></div>
                                     </div>
                                 </li>
                                 <li>
                                     <div className='menuIco separador'>
                                         <div><img src={rain} alt="rain" /></div>
-                                        <div><a href='#shop'>Pufi rain</a></div></div>
+                                        <div><a href='#pufirain'>Pufi rain</a></div></div>
                                 </li>
                                 <li>
                                     <div className='menuIco separador'>
                                         <div><img src={cart} alt="cart" /></div>
-                                        <div><a href='#shop'>Pufi cart</a></div>
+                                        <div><a href='#puficart'>Pufi cart</a></div>
                                     </div>
                                 </li>
                                 <li>
                                     <div className='menuIco'>
                                         <div><img src={nap} alt="nap" /></div>
-                                        <div><a href='#shop'>Pufi nap</a></div>
+                                        <div><a href='#pufinap'>Pufi nap</a></div>
                                     </div>
                                 </li>
                             </ul>

@@ -9,10 +9,10 @@ export const Formulario = () => {
     }
     return (
         <form onSubmit={handleSubmit}>
-            <div class="modal">
-                <div class="email-box">
+            <div className="modal">
+                <div className="email-box">
                     <input
-                        class="email-box__input"
+                        className="email-box__input"
                         id="email"
                         type="email"
                         name="email"
@@ -32,7 +32,7 @@ export const Formulario = () => {
                         field="message"
                         errors={state.errors}
                     /> */}
-                    <button type="submit" class="email-box__button" disabled={state.submitting}>➔</button>
+                    <button type="submit" className="email-box__button" disabled={state.submitting}>➔</button>
                 </div>
             </div>
 

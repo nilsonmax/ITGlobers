@@ -5,7 +5,7 @@ import { Card } from '../Card/Card';
 
 export const SectionFour = () => {
     return (
-        <div className="container-plus">
+        <div id='puficart' className="container-plus">
             <div><img src={DataCard[2].imageTwo} alt="playa" /></div>
             <div>
                 <Card

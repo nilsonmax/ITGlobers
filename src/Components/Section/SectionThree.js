@@ -5,7 +5,7 @@ import { DataCard } from '../Data/Data'
 
 export const SectionThree = () => {
     return (
-        <div className="container-plus">
+        <div id='pufipuff' className="container-plus">
             <div>
                 <Card
                     imageOne={DataCard[1].imageOne}

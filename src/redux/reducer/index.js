@@ -1,20 +1,18 @@
 import {
-    GET_FORMULARIOS,
+    GET_API,
 } from '../action/index.js'
 
 const initialState = {
-    formularios: [],
+    feeds: [],
     copy: [],
-    // detail: {},
-    // genre: [],
 }
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case GET_FORMULARIOS:
+        case GET_API:
             return {
                 ...state,
-                formularios: action.payload,
+                feeds: action.payload,
                 copy: action.payload
             }
 
